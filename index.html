@@ -142,17 +142,6 @@
     }
     .tool-card a:hover {background:#1e40af;}
 
-    /* Footer */
-    footer {
-      background:#1e3a8a;
-      color:#fff;
-      text-align:center;
-      padding:20px;
-      margin-top:40px;
-      font-size:0.9rem;
-      transition:0.3s;
-    }
-
     /* DARK MODE STYLES */
     body.dark {
       background:#0f172a;
@@ -222,6 +211,83 @@
   background: #0056b3;
   transform: scale(1.05);
 }
+/* Footer */
+footer {
+    background-color: #0a0f1f;   /* Dark navy background */
+    color: #ffffff;              /* White text */
+    padding: 60px 0 30px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.footer-logo span {
+    color: #3da9fc;  /* Light Blue highlight */
+}
+
+.footer-about p {
+    opacity: 0.85;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #d1d5db;  /* Light gray for softer look */
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    color: #e5e7eb;  /* Subtle gray */
+}
+
+.footer-links h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #3da9fc;  /* Accent blue for headings */
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    opacity: 1;
+    color: #3da9fc;  /* Hover blue */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 0.9rem;
+    color: #9ca3af;   /* Muted gray text */
+}
+
+
 </style>
 </head>
 <body>
@@ -389,41 +455,36 @@
     <a href="financial-tools.html" class="see-more-btn">See More Tools →</a>
   </div>
 </section>
-
-<!-- Footer -->
-<footer id="contact">
-    <div class="calcuhub-footer-container">
-        
-        <!-- Section 1: About -->
-        <div class="calcuhub-footer-section">
-            <a href="#" class="calcuhub-footer-logo">CalcuHub</a>
-            <p class="calcuhub-footer-text">One hub, endless calculations</p>
+        <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">Calcu<span>Hub</span></a>
+                    <p>One hub,endles calculations</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> calcuhub0@gmail.com</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Tools Wonder. All rights reserved.</p>
+            </div>
         </div>
-        
-        <!-- Section 2: Contact -->
-        <div class="calcuhub-footer-section">
-            <h3 class="calcuhub-footer-heading">Contact Us</h3>
-            <p class="calcuhub-footer-text"><i class="fas fa-envelope"></i> calcuhub0@gmail.com</p>
-        </div>
-        
-        <!-- Section 3: Quick Links -->
-        <div class="calcuhub-footer-section">
-            <h3 class="calcuhub-footer-heading">Quick Links</h3>
-            <ul class="calcuhub-footer-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <!-- Bottom Section -->
-    <div class="calcuhub-footer-bottom">
-        <p>© 2025 Calcuhub. All rights reserved.</p>
-    </div>
-</footer>
-
+    </footer>
 
 
   <!-- JavaScript -->
