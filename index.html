@@ -241,8 +241,8 @@
 
   <!-- Hero -->
   <section class="hero">
-    <h2>Calcuhub – Smart Tools, Smarter Life/h2>
-    <p>From finance to fitness, Calcuhub gives you the tools you need in seconds.</p>
+    <h2> CalcuHub – One hub, endless calculations... </h2>
+    <p>From finance to fitness, CalcuHub gives you the tools you need in seconds.</p>
     <button onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'});">Explore Tools</button>
   </section>
 
@@ -390,10 +390,61 @@
   </div>
 </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Calcuhub. All Rights Reserved.</p>
-  </footer>
+<footer class="bg-blue-900 text-white py-10 mt-12">
+  <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+    
+    <!-- Logo & Tagline -->
+    <div>
+      <h2 class="text-2xl font-bold">Calcuhub</h2>
+      <p class="mt-2 text-gray-300 text-sm">
+        One hub, endless calculations — fast, free, and always at your fingertips.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">Tools</a></li>
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Legal -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3">Legal</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="#" class="hover:underline">Terms of Use</a></li>
+        <li><a href="#" class="hover:underline">Disclaimer</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter / Social -->
+    <div>
+      <h3 class="text-lg font-semibold mb-3">Stay Updated</h3>
+      <form class="flex flex-col space-y-3">
+        <input type="email" placeholder="Enter your email" 
+               class="px-3 py-2 rounded text-black focus:outline-none" />
+        <button class="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded">
+          Subscribe
+        </button>
+      </form>
+      <div class="flex space-x-4 mt-4">
+        <a href="#" aria-label="Twitter" class="hover:text-blue-400">🐦</a>
+        <a href="#" aria-label="Facebook" class="hover:text-blue-400">📘</a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-blue-400">💼</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="text-center mt-10 border-t border-gray-700 pt-5 text-sm text-gray-400">
+    © <span id="year"></span> Calcuhub. All rights reserved.
+  </div>
+</footer>
 
   <!-- JavaScript -->
   <script>
@@ -439,6 +490,10 @@
       behavior: "smooth"
     });
   });
+</script>
+<script>
+  // Dynamic year
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
